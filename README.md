@@ -1,82 +1,41 @@
-Project : Airbnb Hotel Booking Analysis (NYC) 🏨
-Problem Statement
+# Project : Airbnb Hotel Booking Analysis (NYC) 🏨
 
-To analyze the New York City Airbnb dataset to extract meaningful insights into the city's dynamic lodging market by discerning factors influencing listing availability, pricing strategies, and host performance.
-Key Analysis & Insights
+## Problem Statement
 
-    Data Quality & Cleaning: Extensive cleaning involved handling missing data, converting data types (e.g., last review to datetime), and correcting typographical errors (e.g., 'brookln' to 'Brooklyn'). Outliers in the availability 365 column were also managed.
+Analyze the New York City Airbnb dataset to extract actionable insights into the city’s dynamic lodging market. This project aims to identify factors influencing listing availability, pricing strategies, and host performance.
 
-    Geographical Concentration: Identified that the Manhattan neighborhood group holds the highest number of listings.
+## Key Analysis & Insights
 
-    Pricing Structure: Discovered an extremely strong positive correlation (≈1.0) between a listing's base price and its service fee, suggesting the fee is directly dependent on the price.
+- **Data Quality & Cleaning:**  
+  Extensive cleaning was performed, including handling missing data, converting columns (e.g., last review to datetime), correcting typographical errors (such as ‘brookln’ to ‘Brooklyn’), and managing outliers in the availability_365 column.
+- **Geographical Concentration:**  
+  Manhattan was found to contain the highest number of listings among all neighborhood groups.
+- **Pricing Structure:**  
+  Discovered a strong positive correlation (≈1.0) between a listing’s base price and its service fee, indicating the fee is directly dependent on the price.
+- **Host Performance:**  
+  The number of listings a host owns (calculated host listings count) shows a very weak relationship (≈0.07) with their properties’ yearly availability.
+- **Host Quality:**  
+  Explored the relationship between host identity verification and average review rate.
 
-    Host Performance: Found that the number of listings a host owns (calculated host listings count) has a very weak relationship (≈0.07) with their properties’ yearly availability.
+## Deliverables
 
-    Host Quality: Analyzed the relationship between host identity verification and the average review rate.
+- Bar charts visualizing neighborhood and property type distributions.
+- Regression plots illustrating correlations between pricing and availability factors.
+- Data validation checks demonstrating improved data reliability after cleaning.
 
-Deliverables
+## Technology Stack
 
-    Bar charts visualizing neighborhood and property type distribution.
+| Category          | Tool / Library                  | Purpose                                     |
+|-------------------|---------------------------------|---------------------------------------------|
+| Language          | Python                          | Core programming language for all analysis  |
+| Environment       | Google Colab                    | Cloud-based execution environment           |
+| Data Manipulation | Pandas                          | Data cleaning, aggregation, transformation  |
+| Numerical         | NumPy                           | Fundamental array operations                |
+| Visualization     | Matplotlib, Seaborn, Plotly     | Static & interactive plots (bar, line, regression) |
 
-    Regression plots illustrating correlations between pricing and availability factors.
+## How to Run the Project
 
-    Data validation checks demonstrating data reliability after cleaning.
-
-Technology Stack
-
-Category
-	
-
-Tool / Library
-	
-
-Purpose
-
-Language
-	
-
-Python
-	
-
-Core programming language for both projects.
-
-Environment
-	
-
-Google Colab
-	
-
-Cloud-based execution environment.
-
-Data Manipulation
-	
-
-Pandas
-	
-
-Handling large datasets, cleaning, aggregation (groupby, explode).
-
-Numerical Computing
-	
-
-NumPy
-	
-
-Fundamental support for array operations.
-
-Visualization
-	
-
-Matplotlib, Seaborn, Plotly Express
-	
-
-Generating static and interactive plots (bar charts, line trends, regression plots).
-How to Run the Project
-
-    Clone this repository to your local machine.
-
-    Open the Google Colab notebooks (or Jupyter notebooks) containing the project code.
-
-    Ensure the required datasets (netflix_titles.csv, Airbnb_NYC.csv - assuming similar files were used for the Airbnb analysis) are placed in the correct path or uploaded to your environment.
-
-    Execute cells sequentially.
+1. Clone this repository to your local machine.
+2. Open the Google Colab or Jupyter notebooks containing the project code.
+3. Ensure the required datasets (e.g., `netflix_titles.csv`, `Airbnb_NYC.csv`) are available in the correct path or uploaded to your environment.
+4. Execute the notebook cells sequentially to reproduce the analysis and visualizations.
